@@ -4,20 +4,4 @@ distances = list(map(int, input().split()))
 
 if any(d > n for d in distances):
     result = "No Solution"
-else:
-    current_fuel = n
-    stops = []
-    num_stops = 0
-    for i in range(len(distances) - 1):
-        current_fuel -= distances[i]
-        if current_fuel < distances[i + 1]:
-            num_stops += 1
-            stops.append(i + 1)
-            current_fuel = n
 
-    result = str(num_stops) + '\n' + ' '.join(map(str, stops))
-
-print (result)
-
-with open('ouput.txt', 'w') as f:
-    f.write(result)
