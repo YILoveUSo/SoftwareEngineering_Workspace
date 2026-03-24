@@ -6,3 +6,5 @@ if any(d > n for d in distances):
     result = "No Solution"
 
 1111111
+
+gsx noob
