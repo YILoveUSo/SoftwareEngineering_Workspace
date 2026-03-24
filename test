@@ -5,3 +5,4 @@ distances = list(map(int, input().split()))
 if any(d > n for d in distances):
     result = "No Solution"
 
+1111111
